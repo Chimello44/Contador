@@ -1,3 +1,10 @@
+//
+//  FirstViewController.m
+//  ContaPessoas
+//
+//  Created by Hugo Luiz Chimello at 19/02/2015
+//  Copyright (c) 2015 Hugo Luiz Chimello. All rights reserved.
+//
 
 #import "SecondViewController.h"
 #import "Contador.h"
@@ -12,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    contador= [Contador Singleton];
 }
 
 
@@ -21,7 +28,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//criar classe getTotal(contador)
 - (IBAction)click:(id)sender {
     _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
     _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];

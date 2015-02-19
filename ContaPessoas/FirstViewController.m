@@ -1,3 +1,10 @@
+//
+//  FirstViewController.m
+//  ContaPessoas
+//
+//  Created by Hugo Luiz Chimello at 19/02/2015
+//  Copyright (c) 2015 Hugo Luiz Chimello. All rights reserved.
+//
 
 #import "FirstViewController.h"
 #import "Contador.h"
@@ -12,7 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    
+    contador=[Contador Singleton];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +34,7 @@
 - (IBAction)clickBoy:(id)sender {
     [contador maisUmCueca];
     NSLog(@"Meninos - %i",[contador getBoys]);
+    NSLog(@"total - %i", [contador getBoys] + [ contador getGirls]);
 }
 
 - (IBAction)clickGirl:(id)sender {
