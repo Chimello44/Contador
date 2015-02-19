@@ -34,7 +34,7 @@
 - (IBAction)clickBoy:(id)sender {
     [contador maisUmCueca];
     NSLog(@"Meninos - %i",[contador getBoys]);
-    NSLog(@"total - %i", [contador getBoys] + [ contador getGirls]);
+    NSLog(@"total - %i", [contador getTotal]);
 }
 
 - (IBAction)clickGirl:(id)sender {
