@@ -15,9 +15,10 @@
     int girl;
     
 }
-
+@synthesize delegate;
 //variavel global, fora das chaves
 static Contador *singleInstance=nil;
+
 
 
 //Com variavel total(memoria x processamento) soma
@@ -45,11 +46,11 @@ static Contador *singleInstance=nil;
 
 - (void)maisUmCueca {
     boy++;
-    
+    [delegate MostrarDados];
 }
 - (void)maisUmaGata {
     girl++;
-    
+    [delegate MostrarDados];
 }
 
 -(int)getBoys {

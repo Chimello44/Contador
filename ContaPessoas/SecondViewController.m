@@ -20,6 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     contador= [Contador Singleton];
+    [self click:self];
+    contador.delegate = self;
+
+    
+}
+
+-(void)MostrarDados{
+    _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
+    _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
+    _total.text = [NSString stringWithFormat:@"%d", [contador getTotal] ];
 }
 
 

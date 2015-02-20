@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Hugo Luiz Chimello. All rights reserved.
 //
 #import <UIKit/UIKit.h>
+#import "Contador.h"
 
-@interface SecondViewController : UIViewController
-
+@interface SecondViewController : UIViewController <HugoDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *totalBoys;
 @property (weak, nonatomic) IBOutlet UILabel *totalGirls;
 @property (weak, nonatomic) IBOutlet UILabel *total;

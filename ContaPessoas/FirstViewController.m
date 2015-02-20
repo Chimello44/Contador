@@ -22,9 +22,11 @@
     
     contador=[Contador Singleton];
     
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
+    
+    
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,5 +43,8 @@
     [contador maisUmaGata];
     NSLog(@"Meninas - %i",[contador getGirls]);
 }
+
+
+
 
 @end

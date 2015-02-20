@@ -9,9 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
+    
+
+
+
+-(void) MeuDelegate:(FirstViewController *)firstViewController;
 
 - (IBAction)clickBoy:(id)sender;
 - (IBAction)clickGirl:(id)sender;
 
+
+
 @end
+
 
